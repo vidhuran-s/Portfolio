@@ -716,6 +716,101 @@
     outline: 2px solid rgba(36, 167, 255, 0.5);
 }
 
+/* Add these styles */
+.achievements {
+  padding: 100px 50px;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 213, 189, 0.05),
+      transparent
+  );
+}
+
+.achievements-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.achievement-card {
+  background: rgba(21, 21, 21, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.codewars-badge {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover .codewars-badge {
+  transform: scale(1.05);
+}
+
+.pet-projects {
+  padding: 100px 50px;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(36, 167, 255, 0.05),
+      transparent
+  );
+}
+
+.pet-projects .project-card {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.pet-projects .project-card.visible {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Show first category by default */
+.pet-projects .project-card[data-category="scratch"] {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+  .achievements {
+      padding: 50px 30px;
+  }
+  
+  .achievement-card {
+      padding: 20px;
+  }
+}
+
 @media (max-width: 768px) {
     .contact-container {
         grid-template-columns: 1fr;
