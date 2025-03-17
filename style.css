@@ -950,6 +950,14 @@
     .timeline-content {
       padding: 15px;
     }
+
+    .projects {
+      padding: 100px 25px;
+    }
+
+    .pet-projects {
+      padding: 100px 25px;
+    }
   
     .project-card {
       margin: 0 10px;
