@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidhuran S - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <header>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>I'm <span>Vidhuran S</span></h1>
+                <p class="subtitle">A Backend Developer</p>
+                <p class="description">I love learning technologies and systems that power great user experiences—efficient, scalable, and built to last.</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/vidhuran-s" class="button button-primary">Github</a>
+                    <a href="#contact" class="button button-secondary">Contact me</a>
+                </div>
+            </div>
+            <img src="images/user-vidhuran.png" alt="Vidhuran" class="profile-pic">
+        </section>
+
+        <section class="timeline fade-in">
+            <h2 class="section-title">My Learning</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="background: linear-gradient(45deg, #ff6b6b, #feca57);"></div>
+                    <div class="timeline-content">
+                        <h3>Scratch</h3>
+                        <p>Jun 2024</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="background: linear-gradient(45deg, #5f27cd, #54a0ff);"></div>
+                    <div class="timeline-content">
+                        <h3>HTML, CSS</h3>
+                        <p>Jul 2024</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="background: linear-gradient(45deg, #00ddeb, #54a0ff);"></div>
+                    <div class="timeline-content">
+                        <h3>JS</h3>
+                        <p>Sep 2024</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="background: linear-gradient(45deg, #ff9f43, #ee5253);"></div>
+                    <div class="timeline-content">
+                        <h3>JAVA</h3>
+                        <p>Dec 2024</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="background: linear-gradient(45deg, #5f27cd, #54a0ff);"></div>
+                    <div class="timeline-content">
+                        <h3>MySql</h3>
+                        <p>Dec 2024</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="background: linear-gradient(45deg, #00ddeb, #54a0ff);"></div>
+                    <div class="timeline-content">
+                        <h3>MickeyLite</h3>
+                        <p>Mar 2025</p>
+                    </div>
+                </div>
+                <div class="timeline-line"></div>
+            </div>
+        </section>
+
+        <section class="skills fade-in" id="skills">
+            <h2 class="section-title">Skill Set</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Logo" class="skill-logo">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS Logo" class="skill-logo">
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo" class="skill-logo">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo" class="skill-logo">
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Logo" class="skill-logo">
+                    <h3>MySQL</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects fade-in">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-button active" data-filter="all"><span>All</span></button>
+                <button class="filter-button" data-filter="frontend"><span>Frontend</span></button>
+                <button class="filter-button" data-filter="backend"><span>Backend</span></button>
+                <button class="filter-button" data-filter="fullstack"><span>Full Stack</span></button>
+            </div>
+            <div class="project-grid">
+                <div class="project-card" data-category="frontend">
+                    <img src="images/project-card-photos/portfolio.png" alt="Portfolio Website" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Gerold-Portfolio Clone</h3>
+                        <p>A stylish portfolio page designed with <strong>HTML and CSS</strong>, showcasing modern design trends and animations.</p>
+                        <div class="project-links">
+                            <a href="https://vidhurans-8082-8443.zcodeusers.in/responsive-v-3.0/HTML_Final_Project/home-page.html" class="project-link">View Live</a>
+                            <a href="https://github.com/vidhuran-s/ModernPortfolio-Clone" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="frontend">
+                    <img src="images/project-card-photos/expense-tracker.png" alt="Expense Tracker" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Advanced Expense Tracker</h3>
+                        <p>An advance Expense Tracker built with <strong>HTML, CSS and JS</strong>. Features include charts, transactions, and category analysis.</p>
+                        <div class="project-links">
+                            <a href="https://vidhurans-8082-8443.zcodeusers.in/Final-Project-JS/New-Idea-JS-3/Login-and-SignUp-in-JS-Dark/login.html" class="project-link">View Live</a>
+                            <a href="https://github.com/vidhuran-s/Advance-ExpenseTracker" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="backend">
+                    <img src="images/project-card-photos/quiz-app.png" alt="Quiz Management" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Quiz Management System</h3>
+                        <p>A Quiz management project developed with <strong>Java and MySQL</strong> with all the basic <strong>CRUD</strong> operations. Including <strong>Authentication and Authorization</strong></p>
+                        <div class="project-links">
+                            <a href="https://github.com/vidhuran-s/SquizManagement" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="backend">
+                    <img src="images/project-card-photos/tree-data-structure.png" alt="Quiz Management" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Tree Data Structure</h3>
+                        <p><strong>Tree Data Structure</strong> implemented in <strong>Java</strong></p>
+                        <div class="project-links">
+                            <a href="https://github.com/vidhuran-s/TreeMap-DataStructure" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="fullstack">
+                    <img src="images/project-card-photos/speako-croped.png" alt="Quiz Management" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Speako - Team Project</h3>
+                        <p>Speako enhances public speaking with analysed feedback on pace, clarity, and pitch for better delivery and engagement.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/vidhuran-s/Speako" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="project-card" data-category="fullstack">
+                    <img src="images/project-card-photos/quiz-app.png" alt="Quiz Management" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Quiz Managment</h3>
+                        <p>A Quiz management project developed with <strong>Java and MySQL</strong> with all the basic <strong>CRUD</strong> operations. Including <strong>Authentication and Authorization</strong></p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="tools fade-in">
+            <h2 class="section-title">Tools I Use</h2>
+            <div class="tools-container">
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code Logo" class="skill-logo">
+                    <h3>VS Code</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="VS Code Logo" class="skill-logo">
+                    <h3>Eclipse</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ Logo" class="skill-logo">
+                    <h3>IntelliJ</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Git Logo" class="skill-logo">
+                    <h3>Postman</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="images/github-mark-white.svg" alt="GitHub Logo" class="skill-logo">
+                    <h3>GitHub</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section fade-in" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:vidhuran.s@zohocorp.com">vidhuran.s@zohocorp.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+918220679002">+91 8220679002</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
