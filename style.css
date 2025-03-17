@@ -792,6 +792,10 @@
     .timeline-content {
       width: 100%;
     }
+
+    .timeline-item:nth-child(odd) .timeline-dot {
+      left: 30px;
+    }
   }
   
   @media (max-width: 768px) {
