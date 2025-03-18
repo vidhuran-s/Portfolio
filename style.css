@@ -800,6 +800,24 @@
   transform: translateY(0);
 }
 
+.stats-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+
+.stats-content p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.stats-content p:hover {
+  color: var(--text-primary);
+  transform: translateX(5px);
+}
+
 /* Add responsive styles */
 @media (max-width: 768px) {
   .achievements {

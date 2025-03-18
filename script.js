@@ -1,8 +1,30 @@
 // Modern Portfolio JavaScript
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize filters for both sections
     initMainProjectsFilter();
     initPetProjectsFilter();
+
+    // async function fetchCodewarsStats(username) {
+    //     try {
+    //         const response = await fetch(`https://www.codewars.com/api/v1/users/${username}`);
+    //         if (!response.ok) {
+    //             throw new Error("Failed to fetch Codewars stats");
+    //         }
+    //         const data = await response.json();
+
+    //         document.getElementById("codewars-stats").innerHTML = `
+    //             <h3>Codewars Stats</h3>
+    //             <p>Username: ${data.username}</p>
+    //             <p>Rank: ${data.ranks.overall.name}</p>
+    //             <p>Honor: ${data.honor}</p>
+    //             <p>Challenges Completed: ${data.codeChallenges.totalCompleted}</p>
+    //         `;
+    //     } catch (error) {
+    //         console.error("Error fetching Codewars stats:", error);
+    //         document.getElementById("codewars-stats").innerHTML = `<p>Failed to load Codewars stats.</p>`;
+    //     }
+    // }
+
+    // fetchCodewarsStats("Vidhuran");
 
     // Mobile Navigation Toggle
     const navToggle = document.querySelector('.nav-toggle');
@@ -249,7 +271,7 @@ const initPetProjectsFilter = () => {
     });
 
     // Trigger 'scratch' filter by default
-    const defaultFilter = document.querySelector('.pet-projects .filter-button[data-filter="scratch"]');
+    const defaultFilter = document.querySelector('.pet-projects .filter-button[data-filter="java"]');
     if (defaultFilter) {
         defaultFilter.click();
     }
